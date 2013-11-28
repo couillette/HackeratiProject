@@ -15,7 +15,7 @@ public class MysqlConnectionManager {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             String url = "jdbc:mysql://ec2-50-19-213-178.compute-1.amazonaws.com:3306/HackeratiDB";
-            conn = DriverManager.getConnection(url, "couillette", "hxQ65o40S2");
+            conn = DriverManager.getConnection(url, "couillette", "followthesun");
             System.out.println("\nCONNECTED TO Mysql on the cloud");
             
             dropTable("stockexchange");
